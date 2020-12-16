@@ -164,9 +164,17 @@ onama
     margin: 50px auto;
 }
 .onama .container {
-    margin-top: 100px;
+    margin-top: 0px;
 }
-
+.onama {
+    padding-bottom: 80px;
+}
+/***************
+utisci
+***************/
+.utisci {
+    background: var(--secondary);
+}
 
 
 

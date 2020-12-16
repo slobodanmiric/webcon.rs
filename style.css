@@ -8,6 +8,7 @@
     --text: #878787;
     --gray: #1f242a;
     --shadow: #d8d8d8;
+    --lightGray: #e3e3ef;
     --fontFamily: 'Open Sans', sans-serif;
     --fontSize: 16px;
     --transition: .4s ease;
@@ -111,7 +112,7 @@ header
 uvod
 ***************/
 .uvod {
-    padding: 50px 0 100px;
+    padding: 50px 0;
 }
 .uvod .box {
     box-shadow: 0 20px 30px var(--shadow);
@@ -151,7 +152,20 @@ uvod
 .uvod .prviRed {
     margin-bottom: 80px;
 }
-
+/***************
+onama
+***************/
+.onama::before {
+    display: block;
+    content: ""; 
+    height: 2px;
+    max-width: 1140px;
+    background: var(--shadow);
+    margin: 50px auto;
+}
+.onama .container {
+    margin-top: 100px;
+}
 
 
 

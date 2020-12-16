@@ -44,7 +44,7 @@ nav
     color: var(--accents);
 }
 .nav-link {
-    color: var(--white);
+    color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -55,20 +55,23 @@ nav
 /***************
 header
 ***************/
-header {
-    background: linear-gradient(45deg,var(--primary), var(--secondary));
+.mainHeader {
+    background-image: linear-gradient(to right,rgba(55, 40, 123, .9), rgba(255,255,255,.99)),  url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+}
+.mainHeader .row {
     height: 90vh;
 }
-header .row {
-    height: 90vh;
-}
-header i {
+.mainHeader i {
     background: var(--accents);
     padding: 15px;
     font-size: 2rem;
     border-radius: 15px;
     margin-bottom: 20px;
 }
-header h1 {
+.mainHeader h1 {
     font-size: 3rem;
 }

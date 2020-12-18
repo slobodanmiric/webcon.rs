@@ -1,0 +1,263 @@
+/*
+Theme Name: Webcon
+Theme URI: https://webcon.rs
+Author: Sloba & webconers company
+Author URI: https://slobodanmiric.in.rs
+Description: WP education theme
+Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+:root {
+    --primary: #37287b;
+    --secondary: #4942a2;
+    --accents: #fba60b;
+    --black: #121212;
+    --white: #fff;
+    --text: #878787;
+    --gray: #1f242a;
+    --shadow: #d8d8d8;
+    --lightGray: #e3e3ef;
+    --fontFamily: 'Open Sans', sans-serif;
+    --fontSize: 16px;
+    --transition: .4s ease;
+}
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+.button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: var(--accents);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--white);
+}
+.button:hover {
+    background: #e3960a;
+    text-decoration: none;
+    color: var(--white);
+    transition: var(--transition);
+}
+.violetBtn {
+    background: var(--secondary);
+}
+.py-5 {
+    padding: 80px 0 !important;
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.underline {
+    width: 10%;
+    height: 6px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.line1, .line2, .line3 {
+    background: var(--secondary);
+    border-radius: 5px;
+}
+.line1 {
+    flex: 0 0 58%;
+}
+.line2 {
+    flex: 0 0 28%;
+}
+.line3 {
+    flex: 0 0 8%;
+}
+a:hover {
+    transition: var(--transition);
+}
+/***************
+nav
+***************/
+.navbar-brand {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+.navbar-brand:hover {
+    transition: var(--transition);
+    color: var(--accents);
+}
+.nav-link {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-link:hover {
+    transition: var(--transition);
+    color: var(--accents);
+    text-shadow: 0 0 2px var(--primary);
+}
+/***************
+header
+***************/
+.mainHeader {
+    background-image: linear-gradient(to right,rgba(55, 40, 123, .9), rgba(255,255,255,.99)),  url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+}
+.mainHeader .row {
+    height: 90vh;
+}
+.mainHeader i {
+    background: var(--accents);
+    padding: 15px;
+    font-size: 2rem;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.mainHeader h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 2px var(--black);
+}
+/***************
+uvod
+***************/
+.uvod {
+    padding: 50px 0;
+}
+.uvod .box {
+    box-shadow: 0 20px 30px var(--shadow);
+    padding: 50px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.uvod .box:hover {
+    background: linear-gradient(120deg, var(--primary), var(--secondary));
+    color: var(--white);
+    transition: var(--transition);
+    box-shadow: 0 20px 30px var(--text);
+}
+.uvod i {
+    font-size: 2.5rem;
+    color: var(--gray);
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--white);
+}
+.uvod .box:hover i {
+    box-shadow: 0 10px 20px var(--black);
+}
+.uvod h3 {
+    margin: 30px 0;
+}
+.uvod .col-md-4 {
+    flex: 0 0 30%;
+}
+.uvod .prviRed {
+    margin-bottom: 80px;
+}
+/***************
+onama
+***************/
+.onama::before {
+    display: block;
+    content: ""; 
+    height: 2px;
+    max-width: 1140px;
+    background: var(--shadow);
+    margin: 50px auto;
+}
+.onama .container {
+    margin-top: 0px;
+}
+.onama {
+    padding-bottom: 80px;
+}
+/***************
+utisci
+***************/
+.utisci {
+    background: var(--secondary);
+}
+.utisci .card-header {
+    background: var(--accents);
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5rem;
+}
+.utisci .card {
+    border: 1px solid var(--accents);
+    border-radius: 20px;
+    margin-top: -62px;
+}
+.utisci .card-body {
+    padding: 30px;
+}
+/***************
+radioniceHome
+***************/
+.radioniceHome .col-md-6 {
+    margin-bottom: 40px;
+}
+.radioniceHome .col-md-6:last-child {
+    margin-bottom: 0;
+}
+.radioniceHome img {
+    border-radius: 20px;
+}
+.radioniceHome a {
+    color: var(--accents);
+}
+.radioniceHome .datum {
+    background: var(--lightGray);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+/***************
+footer
+***************/
+footer {
+    background: var(--gray);
+}
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+footer .col-md-4:nth-child(1) a {
+    color: var(--lightGray);
+    font-size: 2rem;
+    margin-right: 5px;
+}
+footer .col-md-4:nth-child(1) a:hover {
+    color: var(--white);
+}
+footer a {
+    color: var(--lightGray);
+}
+footer a:hover {
+    color: var(--white);
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer hr {
+    background: var(--text);
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin: 30px 0;
+}
+footer img {
+    width: 80%;
+    margin-bottom: 20px;
+}

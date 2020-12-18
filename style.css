@@ -176,8 +176,18 @@ utisci
 .utisci {
     background: var(--secondary);
 }
-
-
-
+.utisci .card-header {
+    background: var(--accents);
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5rem;
+}
+.utisci .card {
+    border: 1px solid var(--accents);
+    border-radius: 20px;
+    margin-top: -62px;
+}
+.utisci .card-body {
+    padding: 30px;
+}
 
 

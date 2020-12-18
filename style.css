@@ -62,6 +62,9 @@ h2 {
 .line3 {
     flex: 0 0 8%;
 }
+a:hover {
+    transition: var(--transition);
+}
 /***************
 nav
 ***************/
@@ -188,6 +191,67 @@ utisci
 }
 .utisci .card-body {
     padding: 30px;
+}
+/***************
+radioniceHome
+***************/
+.radioniceHome .col-md-6 {
+    margin-bottom: 40px;
+}
+.radioniceHome .col-md-6:last-child {
+    margin-bottom: 0;
+}
+.radioniceHome img {
+    border-radius: 20px;
+}
+.radioniceHome a {
+    color: var(--accents);
+}
+.radioniceHome .datum {
+    background: var(--lightGray);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+/***************
+footer
+***************/
+footer {
+    background: var(--gray);
+}
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+footer .col-md-4:nth-child(1) a {
+    color: var(--lightGray);
+    font-size: 2rem;
+    margin-right: 5px;
+}
+footer .col-md-4:nth-child(1) a:hover {
+    color: var(--white);
+}
+footer a {
+    color: var(--lightGray);
+}
+footer a:hover {
+    color: var(--white);
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer hr {
+    background: var(--text);
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin: 30px 0;
+}
+footer img {
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 

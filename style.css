@@ -107,6 +107,7 @@ header
 }
 .mainHeader h1 {
     font-size: 3rem;
+    text-shadow: 0 0 2px var(--black);
 }
 /***************
 uvod
